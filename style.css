@@ -1,19 +1,139 @@
+/* ==========================================================================
+   ESTILOS GERAIS (Computador e Celular)
+   ========================================================================== */
 body {
     margin: 0;
-    font-family: Arial;
-    background-color: #f4efe5; /* Mantém a cor antiga como fundo padrão caso a imagem falhe */
-    background-image: url('https://raw.githubusercontent.com/NossoEventoRS/Imagens/refs/heads/main/Fundo.png'); /* Cole o link da sua imagem aqui */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem fique se repetindo em mosaico */
-    background-attachment: fixed; /* Opcional: o fundo fica parado enquanto você rola a página */
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4efe5;
+    background-image: url('https://raw.githubusercontent.com/NossoEventoRS/Imagens/refs/heads/main/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-footer { text-align: center; margin-top: 20px; font-size: 12px; color: #ffffff; }
-.logos{display:flex;justify-content:center;padding:20px}
-.logos img{height:80px}
-.carousel{height:220px;position:relative;overflow:hidden;background:#ddd}
-.slide{display:none;height:100%;align-items:center;justify-content:center;font-size:40px}
-.slide.active{display:flex}
-.btn{display:block;max-width:700px;margin:20px auto;padding:20px;border-radius:14px;text-decoration:none;color:#fff;font-size:28px;text-align:center;font-weight:bold}
-.red{background:#b71c1c}.green{background:#1b8f45}.yellow{background:#d4a017}
-.xiru{text-align:center;padding:30px; color:#ff0303; background:#ffffff; display:block;max-width:700px;margin:20px auto;padding:20px;border-radius:14px;text-decoration:none;color:#000000;font-size:28px;text-align:center;font-weight:bold}.wa{background:#25D366;color:#fff;padding:15px 25px;border-radius:25px;text-decoration:none}
+
+/* Área das Logos Organizadoras */
+.logos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.logos img {
+    max-width: 90%; /* Garante que não passe da tela do celular */
+    height: auto;    /* Mantém a proporção correta sem achatar */
+    max-height: 80px; /* Limita a altura no computador */
+}
+
+/* Estrutura do Carrossel de Banners */
+.carousel {
+    width: 100%;
+    max-width: 1100px; /* Alinha o tamanho máximo com os seus formulários */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #ddd;
+    aspect-ratio: 16 / 6; /* Define uma proporção perfeita em qualquer tela */
+    height: auto; /* Cancela a altura fixa de 220px para não cortar as laterais */
+}
+.slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.slide.active {
+    display: block; /* Alterado para block para o comportamento correto de imagens */
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+/* Botões de Inscrição */
+.btn {
+    display: block;
+    max-width: 700px;
+    width: 85%; /* Cria margens seguras nas laterais no celular */
+    margin: 20px auto;
+    padding: 18px 10px; /* Espaçamento interno confortável */
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px; /* Tamanho base ideal para computador */
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Cores dos Botões */
+.red { background: #b71c1c; }
+.green { background: #1b8f45; }
+.yellow { background: #d4a017; }
+
+/* Bloco Informativo Xirú */
+.xiru {
+    text-align: center;
+    background: #ffffff;
+    display: block;
+    max-width: 700px;
+    width: 85%; /* Acompanha o padrão dos botões */
+    margin: 30px auto;
+    padding: 25px 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.xiru h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Botão do WhatsApp */
+.wa {
+    background: #25D366;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block; /* Impede que quebre o layout */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.2s;
+}
+.wa:hover {
+    background: #128c7e;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Melhora leitura dependendo do fundo */
+}
+
+/* ==========================================================================
+   CONFIGURAÇÃO EXCLUSIVA PARA CELULARES (Telas de até 600px de largura)
+   ========================================================================== */
+@media (max-width: 600px) {
+    .btn {
+        font-size: 18px; /* Diminui a letra para o texto não quebrar em várias linhas */
+        padding: 14px 10px;
+    }
+    .xiru h2 {
+        font-size: 18px;
+    }
+    .wa {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
