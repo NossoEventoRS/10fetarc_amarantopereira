@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial;
     background-color: #f4efe5; /* Mantém a cor antiga como fundo padrão caso a imagem falhe */
     background-image: url('https://raw.githubusercontent.com/NossoEventoRS/Imagens/refs/heads/main/Fundo.png'); /* Cole o link da sua imagem aqui */
