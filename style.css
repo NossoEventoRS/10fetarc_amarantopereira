@@ -2,8 +2,8 @@
    ESTILOS GERAIS (Computador e Celular)
    ========================================================================== */
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     font-family: Arial, sans-serif;
     background-color: #f4efe5;
     background-image: url('https://raw.githubusercontent.com/NossoEventoRS/Imagens/refs/heads/main/Fundo.png');
