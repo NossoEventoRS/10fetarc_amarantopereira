@@ -74,8 +74,16 @@ body {
 /* Cores dos Botões */
 .red { background: #b71c1c; }
 .green { background: #1b8f45; }
-.yellow{text-align:center;padding:30px; color:#ff0303; background:#d4a017; display:block;max-width:700px;margin:20px auto;padding:20px;border-radius:14px;text-decoration:none;color:#000000;font-size:28px;text-align:center;font-weight:bold}.wa{background:#25D366;
-color:#fff;padding:15px 25px;border-radius:25px;text-decoration:none;}
+.yellow{
+    text-align: center;
+    background: #fffb01;
+    display: block;
+    max-width: 700px;
+    width: 85%; /* Acompanha o padrão dos botões */
+    margin: 30px auto;
+    padding: 10px 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
 
 /* Bloco Informativo Xirú */
 .xiru {
@@ -85,10 +93,17 @@ color:#fff;padding:15px 25px;border-radius:25px;text-decoration:none;}
     max-width: 700px;
     width: 85%; /* Acompanha o padrão dos botões */
     margin: 30px auto;
-    padding: 25px 15px;
+    padding: 10px 15px;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.yellow h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
 .xiru h2 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -98,6 +113,8 @@ color:#fff;padding:15px 25px;border-radius:25px;text-decoration:none;}
 
 /* Botão do WhatsApp */
 .wa {
+     transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
     background: #25D366;
     color: #fff;
     padding: 12px 25px;
