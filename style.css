@@ -75,7 +75,7 @@ body {
 .red { background: #b71c1c; }
 .green { background: #1b8f45; }
 .yellow { background: #d4a017; }
-
+.xiru2{text-align:center;padding:30px; color:#ff0303; background:#d4a017; display:block;max-width:700px;margin:20px auto;padding:20px;border-radius:14px;text-decoration:none;color:#000000;font-size:28px;text-align:center;font-weight:bold}.wa{background:#25D366;color:#fff;padding:15px 25px;border-radius:25px;text-decoration:none}
 /* Bloco Informativo Xirú */
 .xiru {
     text-align: center;
