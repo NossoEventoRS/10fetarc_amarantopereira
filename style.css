@@ -72,6 +72,7 @@ body {
 }
 
 /* Cores dos Botões */
+.regulamento { background: #444444; }
 .red { background: #b71c1c; }
 .green { background: #1b8f45; }
 .yellow{
